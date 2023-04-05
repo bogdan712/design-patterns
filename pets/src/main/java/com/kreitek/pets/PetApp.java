@@ -3,11 +3,13 @@ package com.kreitek.pets;
 import com.kreitek.pets.controllers.CatController;
 import com.kreitek.pets.controllers.ControllerFactory;
 import com.kreitek.pets.controllers.DogController;
+import com.kreitek.pets.patrones.Logger;
+
 import java.util.Scanner;
 
 public class PetApp {
 
-    // TODO Logger declaration
+    private static final Logger logger = new Logger();
 
     public static void main (String[] args) {
         ControllerFactory controllerFactory = new ControllerFactory();
